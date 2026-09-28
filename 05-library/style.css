@@ -1,10 +1,11 @@
 .container{
     width: 450px;
     margin: 0 auto;
+    border: 1px solid black;
 }
 
 h2{
-    margin-left: 20px;
+    margin-left: 30px;
 }
 header{
     width: 450px;
@@ -20,7 +21,14 @@ img{
     width: 150px;
     height: 200px;
 }
+input{
+    width: 330px;
+    height: 45px;
+    border: none;
+    outline: none;
+}
 
+/*  오늘의 책  */
 .search{
     background-color: white;
     border-radius: 50px;
@@ -32,27 +40,47 @@ img{
     align-items: center;
     margin-top: -25px;
     margin-left: 10px;
-   
 }
-input{
-    width: 330px;
+span{
+    color: gray;
+}
+.section-but{
+    width: 220px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.preview{
+    width: 90px;
     height: 45px;
-    border: none;
-    outline: none;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: orange;
+    border: 1px solid orange;
 }
-
+.comment{
+   width: 90px;
+    height: 45px;
+    margin: 10px; 
+    border-radius: 20px;
+    background-color: orange;
+    border: 1px solid orange;
+}
 i{
     margin: 0 25px;
     color:orangered;
     font-size: 20px;
 }
 .section-list{
-    margin-left: 20px;
+    margin-left: 30px;
     display: flex;
     
 }
 .section-image{
-    margin-right: 20px;
+    margin-right: 30px;
+    
 }
 .section-actions{
     margin-bottom: 10px;
@@ -63,4 +91,7 @@ p{
 }
 .section-but{
 
+}
+.slider-image{
+    display: flex;
 }
