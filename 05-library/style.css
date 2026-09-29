@@ -16,7 +16,10 @@ header{
     align-items: center;
     /* text-align: center; 텍스트 가운데 정렬*/
 }
-
+i{
+    color:orangered;
+    font-size: 20px;
+}
 img{
     width: 150px;
     height: 200px;
@@ -26,6 +29,9 @@ input{
     height: 45px;
     border: none;
     outline: none;
+}
+.fa-magnifying-glass{
+    margin: 0 25px;
 }
 
 /*  오늘의 책  */
@@ -50,7 +56,6 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .preview{
     width: 90px;
@@ -68,14 +73,33 @@ span{
     background-color: orange;
     border: 1px solid orange;
 }
-i{
-    margin: 0 25px;
-    color:orangered;
-    font-size: 20px;
+.section-icon{
+    width: 220px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.bell-circle {
+    width: 45px;
+    height: 45px;
+    border: 2px solid orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bell-circle i {
+    margin: 0;
+    font-size: 25px;
+}
+
 .section-list{
     margin-left: 30px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .section-image{
