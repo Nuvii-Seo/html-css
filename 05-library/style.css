@@ -125,6 +125,27 @@ p{
 .section-but{
 
 }
+/*  베스트 책 추천 */
+
+.slider {
+    display: flex;
+    align-items: center;
+}
+
 .slider-image{
     display: flex;
+    overflow-x: auto;  /* 가로로 스크롤 가능하게 함 */
+}
+
+.slider-image img{
+    margin: 0 10px;
+}
+.prev,
+.next {
+    border: none;
+    background: none;
+}
+.prev i,
+.next i{
+    font-size: 25px;
 }
