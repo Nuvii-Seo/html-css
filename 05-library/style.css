@@ -5,7 +5,10 @@
 }
 
 h2{
+    margin: 0 auto;
     margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 header{
     width: 450px;
@@ -21,7 +24,7 @@ i{
     font-size: 20px;
 }
 img{
-    width: 150px;
+    width: 170px;
     height: 200px;
 }
 input{
@@ -49,6 +52,7 @@ input{
 }
 span{
     color: gray;
+    font-size: 14px;
 }
 .section-but{
     width: 220px;
@@ -148,4 +152,15 @@ p{
 .prev i,
 .next i{
     font-size: 25px;
+}
+/* 작가소개글 */
+.footer-author{
+    margin-left: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text{
+    margin-left: 20px;
 }
