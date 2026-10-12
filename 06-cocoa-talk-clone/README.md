@@ -11,3 +11,9 @@ BEM(Block Element Modifier) -> 쉽게 읽히는 css 규칙 적용
 https://heroicons.dev/ 아이콘
 https://heroicons.com/
 https://fontawesome.com/
+
+아이콘 사이즈 이런식으로 뒤에 입력 fa-lg
+lg
+xl
+2x
+3x
