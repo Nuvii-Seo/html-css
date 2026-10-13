@@ -1,30 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "reset.css";
+@import "status-bar.css";
+
 body{
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
 }
 
-.status-bar{
+.welcome-header{
+    margin-top: 90px;
+    text-align: center; /* 같은 텍스트 */
     display: flex;
-    /* justify-content: space-between; 이방법은 시간을 가운데 정렬이 못함 */
-    justify-content: center;/*1 :전부 가운데 정렬로 하고*/
+    flex-direction: column;/*교차축 이용*/
+    align-items: center;
 }
-.status-bar__column{
-    width: 33%;/*2 : 모든 width에 33%*/
+.welcome-header__title{
+    margin-bottom: 20px;
+    font-size: 25px;
+    
 }
-
-.status-bar__column:first-child span{
-    margin-right: 5px;
-}
-.status-bar__column:nth-child(2){
-    display: flex;
-    justify-content: center;/*3 : 두번째는 가운데 정렬로 만듦*/
-}
-.status-bar__column:last-child{
-    display: flex;
-    justify-content: flex-end;/*4 : 마지막에 맨끝옮기고 가운데정렬추가함*/
-    align-items: center;   
-}
-.status-bar__column .fa-battery-full{
-    margin: 0px 5px;
+.welcome-header__text{
+    width: 45%;/*전체너비중에 45퍼만 사용가능 화면비율따라 달라짐.*/
+    opacity: 0.7;/*글자색 회색으로*/
 }
