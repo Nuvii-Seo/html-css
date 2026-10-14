@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import "reset.css";
+@import "variables.css";
 @import "status-bar.css";
 
 body{
@@ -8,7 +9,7 @@ body{
 }
 
 .welcome-header{
-    margin-top: 90px;
+    margin: 90px 0px;
     text-align: center; /* 같은 텍스트 */
     display: flex;
     flex-direction: column;/*교차축 이용*/
@@ -22,4 +23,25 @@ body{
 .welcome-header__text{
     width: 45%;/*전체너비중에 45퍼만 사용가능 화면비율따라 달라짐.*/
     opacity: 0.7;/*글자색 회색으로*/
+}
+
+#login-form{
+    display: flex;
+    flex-direction: column;/*옆을 위아래로 변경*/
+    margin: 0px 30px;
+}
+
+#login-form input {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px 0px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    transition: border-color .3s ease;/*애니메이션 효과추가*/
+}
+#login-form input::placeholder{
+    color:rgba(0, 0, 0, 0.4);
+}
+#login-form input:focus{
+    border-color: var(--yellow); /*클릭시 보더 밑줄색상변경*/
 }
