@@ -1,0 +1,53 @@
+.welcome-header{
+    margin: 90px 0px;
+    text-align: center; /* 같은 텍스트 */
+    display: flex;
+    flex-direction: column;/*교차축 이용*/
+    align-items: center;
+}
+.welcome-header__title{
+    margin-bottom: 20px;
+    font-size: 25px;
+    
+}
+.welcome-header__text{
+    width: 45%;/*전체너비중에 45퍼만 사용가능 화면비율따라 달라짐.*/
+    opacity: 0.7;/*글자색 회색으로*/
+}
+
+#login-form{
+    display: flex;
+    flex-direction: column;/*옆을 위아래로 변경*/
+    margin: 0px 30px;
+}
+
+#login-form input {
+    border: none;
+    padding: 15px 0px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+/*제외할 것 not*/
+#login-form input:not([type="submit"]){ /*버튼이 아닌것만 적용*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color .3s ease;/*애니메이션 효과추가*/
+}
+#login-form input::placeholder{
+    color:rgba(0, 0, 0, 0.4);
+}
+#login-form input:focus{
+    border-color: var(--yellow); /*클릭시 보더 밑줄색상변경*/
+}
+#login-form input[type="submit"]{
+    background-color: var(--yellow);
+    /* cursor: not-allowed; 클릭X */
+    cursor:pointer;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+#login-form a{
+    text-align: center;
+    text-decoration: none;/**/
+    color:inherit;/*상속임. 그래서 원래 디폴트값은 검정*/
+    font-size: 13px;
+}
