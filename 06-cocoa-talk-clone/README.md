@@ -25,3 +25,14 @@ action은 어떤페이지로 데이터를 보낼건지 지정
 method 2가지 방식 POST랑 GET
 POST 백엔드 서버에 정보 전송하는 방식
 GET 정보에 취약함 유저네임과 비밀번호  GET방식으로 보내면 안됨! (주의)
+
+유효한html만드는법
+nav>ul>li*4>a
+<nav>
+        <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </nav>
